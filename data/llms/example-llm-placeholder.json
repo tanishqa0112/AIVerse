@@ -1,0 +1,25 @@
+{
+  "id": "example-llm-placeholder",
+  "name": "Example LLM (template)",
+  "kind": "llm",
+  "vendor": "Example Corp",
+  "summary": "Replace this file with a real model family entry. This placeholder exists so the folder structure is clear before the first contribution.",
+  "strengths": [
+    "Illustrates the JSON shape expected under data/llms/"
+  ],
+  "weaknesses": [
+    "Not a real product—delete or replace in your fork"
+  ],
+  "best_for": [
+    "Understanding the contribution format"
+  ],
+  "avoid_for": [
+    "Production use"
+  ],
+  "links": {
+    "docs": "https://example.com"
+  },
+  "tags": ["template"],
+  "last_updated": "2026-04-12",
+  "notes": "Safe to remove this file once you add real entries."
+}

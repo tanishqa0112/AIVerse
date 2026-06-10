@@ -1,0 +1,29 @@
+{
+  "id": "cursor",
+  "name": "Cursor",
+  "kind": "devtool",
+  "vendor": "Anysphere",
+  "summary": "IDE (VS Code fork) with integrated AI assistance, agent mode, and codebase-aware context for software development.",
+  "strengths": [
+    "Tight editor integration for refactor-and-apply workflows",
+    "Strong codebase indexing and multi-file edits in many stacks",
+    "Active iteration on agent UX for developers"
+  ],
+  "weaknesses": [
+    "Product and model availability evolve quickly—verify current limits and policies",
+    "Heavy reliance on cloud features may not fit air-gapped or strict compliance environments without extra setup"
+  ],
+  "best_for": [
+    "Day-to-day coding with AI-assisted edits across a repo",
+    "Iterating on features with conversational context tied to files"
+  ],
+  "avoid_for": [
+    "Environments where third-party IDE sync or AI features are disallowed without review"
+  ],
+  "links": {
+    "home": "https://cursor.com"
+  },
+  "tags": ["ide", "agent", "developer"],
+  "last_updated": "2026-04-12",
+  "notes": "Capability set depends on plan and product version; treat as a snapshot for orientation."
+}

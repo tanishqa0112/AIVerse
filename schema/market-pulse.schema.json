@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/tanishqa0112/AIVerse/schema/market-pulse.schema.json",
+  "title": "AIVerse market pulse file",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["id", "date", "title", "summary"],
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^[a-z0-9][a-z0-9-]*[a-z0-9]$|^[a-z0-9]$"
+      },
+      "date": { "type": "string", "format": "date" },
+      "title": { "type": "string", "minLength": 1 },
+      "summary": { "type": "string", "minLength": 1 },
+      "relevance": {
+        "type": "array",
+        "items": { "type": "string", "minLength": 1 }
+      },
+      "links": {
+        "type": "object",
+        "additionalProperties": { "type": "string", "format": "uri" }
+      }
+    }
+  }
+}

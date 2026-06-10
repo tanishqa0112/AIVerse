@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/tanishqa0112/AIVerse/schema/entity.schema.json",
+  "title": "AIVerse catalog entity",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "name",
+    "kind",
+    "summary",
+    "strengths",
+    "weaknesses",
+    "best_for",
+    "last_updated"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*[a-z0-9]$|^[a-z0-9]$",
+      "description": "Stable slug used as filename (without .json)"
+    },
+    "name": { "type": "string", "minLength": 1 },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "llm",
+        "agent",
+        "platform",
+        "devtool",
+        "dataset",
+        "other"
+      ]
+    },
+    "vendor": { "type": "string" },
+    "summary": { "type": "string", "minLength": 1 },
+    "strengths": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "weaknesses": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "best_for": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "avoid_for": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "when_to_use": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "description": "Concrete scenarios (optional, complements best_for)"
+    },
+    "links": {
+      "type": "object",
+      "additionalProperties": { "type": "string", "format": "uri" }
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "last_updated": { "type": "string", "format": "date" },
+    "notes": { "type": "string" }
+  }
+}

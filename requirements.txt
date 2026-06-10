@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+langchain
+openai
+python-dotenv
+pandas
+streamlit
+chromadb
+jsonschema>=4.22.0
+PyYAML>=6.0.1

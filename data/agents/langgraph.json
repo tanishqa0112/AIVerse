@@ -1,0 +1,28 @@
+{
+  "id": "langgraph",
+  "name": "LangGraph",
+  "kind": "agent",
+  "vendor": "LangChain",
+  "summary": "Library for building stateful, multi-actor agent workflows as graphs with cycles, persistence, and human-in-the-loop patterns.",
+  "strengths": [
+    "Explicit graph model suits complex control flow and retries",
+    "Integrates with LangChain ecosystem and common LLM providers",
+    "Supports durable execution patterns useful for production agents"
+  ],
+  "weaknesses": [
+    "Conceptual overhead versus linear chains for simple tasks",
+    "Operational behavior depends on deployment and checkpointing choices"
+  ],
+  "best_for": [
+    "Multi-step agents with branching, loops, or approval gates",
+    "Teams already invested in Python and LangChain-style tooling"
+  ],
+  "avoid_for": [
+    "Trivial single-call LLM wrappers where a thin SDK suffices"
+  ],
+  "links": {
+    "docs": "https://langchain-ai.github.io/langgraph/"
+  },
+  "tags": ["python", "orchestration", "state-machine"],
+  "last_updated": "2026-04-12"
+}

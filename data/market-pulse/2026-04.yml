@@ -1,0 +1,11 @@
+# Short, dated notes—link to primary sources. One file per month is a convention, not a rule.
+
+- id: ai-verse-repo-structure-2026-04
+  date: "2026-04-12"
+  title: "AIVerse adopts JSON entities + YAML market pulse"
+  summary: >
+    The project starts as structured data with schema validation so
+    contributors can focus on accurate comparisons rather than website plumbing.
+  relevance: [community, governance]
+  links:
+    primary: "https://github.com/tanishqa0112/AIVerse"
